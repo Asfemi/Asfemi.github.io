@@ -1074,13 +1074,14 @@
             <!-- /Boxes de Acoes -->
           </div>
           <div class="col-lg-7 col-md-12">
-            <form>
+            <form action="https://formsubmit.co/ayodelesamuelofficial@email.com" method="POST">
               <div class="form-group">
                 <input
                   type="text"
                   class="form-control"
                   id="fname"
                   placeholder="Full Name"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -1089,6 +1090,7 @@
                   class="form-control"
                   id="umail"
                   placeholder="Email"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -1105,8 +1107,11 @@
                   id="exampleFormControlTextarea1"
                   rows="4"
                   placeholder="Message"
+                  required
                 ></textarea>
               </div>
+              <input type="hidden" name="_next" value="https://asfemi.github.io/pages/thankyou.html">
+              <input type="hidden" name="_subject" value="New Work Contact Mail!">
               <button type="submit" class="br-learn-more-right">
                 <span class="text">Submit</span>
               </button>

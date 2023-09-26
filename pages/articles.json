@@ -1,0 +1,87 @@
+[
+    {
+        "title": "Sample Blog Article 1",
+        "date": "September 23, 2023",
+        "author": "Author 1",
+        "content": [
+            {
+                "type": "text",
+                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
+            },
+            {
+                "type": "image",
+                "src": "https://via.placeholder.com/600x300",
+                "alt": "Sample Image 2"
+            },
+            {
+                "type": "text",
+                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
+            },
+            {
+                "type": "image",
+                "src": "https://via.placeholder.com/600x300",
+                "alt": "Sample Image 3"
+            },
+            {
+                "type": "text",
+                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
+            },
+            {
+                "type": "text",
+                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
+            }
+        ]
+    },
+    {
+        "title": "Sample Blog Article 2",
+        "date": "September 24, 2023",
+        "author": "Author 2",
+        "content": [
+            {
+                "type": "text",
+                "data": "Another article with different content."
+            },
+            {
+                "type": "image",
+                "src": "https://via.placeholder.com/600x300",
+                "alt": "Sample Image 4"
+            }
+        ]
+    },
+    {
+        "title": "Sample Blog Article",
+        "date": "September 23, 2023",
+        "author": "Your Name",
+        "content": [
+            {
+                "type": "text",
+                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
+            },
+            {
+                "type": "image",
+                "src": "https://via.placeholder.com/600x300",
+                "alt": "Sample Image 2"
+            },
+            {
+                "type": "text",
+                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
+            },
+            {
+                "type": "image",
+                "src": "https://via.placeholder.com/600x300",
+                "alt": "Sample Image 3"
+            },
+            {
+                "type": "text",
+                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
+            },
+            {
+                "type": "text",
+                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
+            }
+        ]
+    }
+]
+
+
+

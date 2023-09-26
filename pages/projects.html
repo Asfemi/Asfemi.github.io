@@ -1,10 +1,126 @@
 <!DOCTYPE html>
-<html>
-    <head lang="en">
-        <meta charset="UTF-8">
-        <title>projects</title>
-    </head>
-    <body>
-        <h1>welcome!</h1>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .project {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .project-title {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .project-meta {
+        color: #888;
+        font-size: 14px;
+      }
+      .project-content {
+        line-height: 1.6;
+        font-size: 16px;
+      }
+      .project-image {
+        max-width: 800px; /* Set maximum width to 800px */
+        height: 400px; /* Set height to 400px */
+        /* max-width: 100%; */
+        /* height: auto; */
+        margin-bottom: 20px;
+      }
+      /* New styles for test */
+      .project-test {
+        margin-top: 30px;
+        border-top: 1px solid #888;
+        padding-top: 20px;
+      }
+      .project-test-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .project-test-content {
+        line-height: 1.6;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="project">
+      <h1 class="project-title"></h1>
+      <ul class="project-meta">
+        <li>Published Date: <span class="project-date"></span></li>
+        <li>Author: <span class="project-author"></span></li>
+      </ul>
+      <h2 class="project-previewlink">Preview Link:</h2>
+      <h2 class="project-client">Client:</h2>
+      <h2 class="project-city">Location:</h2>
+      <div class="project-content">
+        <!-- Content will be populated dynamically -->
+      </div>
+      <h2 class="project-shareLinks">Share Links:</h2>
+    </div>
+    
+    <script>
+      // Get the index from the URL query parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const index = urlParams.get("index");
+
+      // Fetch the JSON data (replace with your JSON file URL)
+      fetch("project_data.json")
+        .then((response) => response.json())
+        .then((data) => {
+          // Access the article based on the index
+          const project = data[index];
+
+          // Populate the HTML elements with the JSON data
+          document.querySelector(".project-title").textContent = project.title;
+          document.querySelector(".project-date").textContent = project.date;
+          document.querySelector(".project-author").textContent = project.author;
+          document.querySelector(".project-client").textContent = project.client;
+          document.querySelector(".project-city").textContent = project.location;
+          document.querySelector(".project-previewlink").textContent = project.previewLink;
+
+          // Populate content section
+          const contentContainer = document.querySelector(".project-content");
+          project.content.forEach((item) => {
+            if (item.type === "text") {
+              const paragraph = document.createElement("p");
+              paragraph.textContent = item.data;
+              contentContainer.appendChild(paragraph);
+            } else if (item.type === "image") {
+              const image = document.createElement("img");
+              image.src = item.src;
+              image.alt = item.alt;
+              image.className = "project-image";
+              contentContainer.appendChild(image);
+            } else if (
+              item.type === "list" &&
+              item.goals &&
+              Array.isArray(item.goals)
+            ) {
+              const ul = document.createElement("ul");
+              item.goals.forEach((goal) => {
+                const li = document.createElement("li");
+                li.textContent = goal;
+                ul.appendChild(li);
+              });
+              contentContainer.appendChild(ul);
+            }
+          });
+        })
+        .catch((error) => {
+          console.error("Error fetching data:", error);
+        });
+    </script>
+  </body>
 </html>

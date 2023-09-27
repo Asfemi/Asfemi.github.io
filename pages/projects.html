@@ -68,8 +68,11 @@
         <!-- Content will be populated dynamically -->
       </div>
       <h2 class="project-shareLinks">Share Links:</h2>
+   
+      
     </div>
     
+
     <script>
       // Get the index from the URL query parameters
       const urlParams = new URLSearchParams(window.location.search);
@@ -85,10 +88,14 @@
           // Populate the HTML elements with the JSON data
           document.querySelector(".project-title").textContent = project.title;
           document.querySelector(".project-date").textContent = project.date;
-          document.querySelector(".project-author").textContent = project.author;
-          document.querySelector(".project-client").textContent = project.client;
-          document.querySelector(".project-city").textContent = project.location;
-          document.querySelector(".project-previewlink").textContent = project.previewLink;
+          document.querySelector(".project-author").textContent =
+            project.author;
+          document.querySelector(".project-client").textContent =
+            project.client;
+          document.querySelector(".project-city").textContent =
+            project.location;
+          document.querySelector(".project-previewlink").textContent =
+            project.previewLink;
 
           // Populate content section
           const contentContainer = document.querySelector(".project-content");

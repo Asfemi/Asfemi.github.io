@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
   <title>Ayodele Samuel - Portfolio</title>
-  
+
   <meta name="keywords"
     content="personal portfolio, cv, resume, agency, bootstrap, clean, cv, designer, developer, freelancer, modern, one page portfolio, onepage, personal portfolio, responsive, resume, vcard" />
   <meta name="description" content="Unique Personal Portfolio " />
@@ -32,6 +32,8 @@
 
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Others -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css"> 
 
 </head>
 
@@ -1143,41 +1145,51 @@
             <h1 class="article-title"></h1>
             <p class="article-meta"></p>
             <p class="reading-time"></p>
-            <h2 class="project-previewlink">Preview Link:</h2>
-            <h2 class="project-client">Client:</h2>
-            <h2 class="project-city">Location:</h2>
+            <p class="project-previewlink">Preview Link:</p>
+            <p class="project-client">Client:</p>
+            <p class="project-city">Location:</p>
             <div class="article-content">
               <!-- Content will be dynamically loaded here -->
             </div>
           </div>
 
         </div>
-        <div class="modal-footer">
-          <div class="br-social">
-            <ul>
-              <li>
-                <a href="https://www.linkedin.com/in/ayodele-samuel-a0162116a/"><i class="fa fa-facebook"
-                    aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/ayodele_samuell"><i class="fa fa-instagram"
-                    aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/AyodeleSamuelOF"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a href="https://web.facebook.com/samiey.lucry/photos_by"><i class="fa fa-linkedin"
-                    aria-hidden="true"></i></a>
-              </li>
-            </ul>
+        <footer class="margin-t-80">
+          <div class="container">
+            <div class="br-footer-detail">
+              <div class="br-copy">
+                Copyright © <a class="site-name" href="index.html">ASFemi</a> all
+                rights reserved. Powered by Asfemi.
+              </div>
+              <div class="br-social">
+                <ul>
+                  <li>
+                    <a href="https://www.linkedin.com/in/ayodele-samuel-a0162116a/"><i class="fa fa-facebook"
+                        aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/ayodele_samuell"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/AyodeleSamuelOF"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://web.facebook.com/samiey.lucry/photos_by"><i class="fa fa-linkedin"
+                        aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
+        </footer>
       </div>
     </div>
     <!-- End Modal -->
 
     <script src="https://kit.fontawesome.com/YOUR_KIT_ID.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js"></script> 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -1228,14 +1240,24 @@
             document.querySelector(".project-previewlink").textContent =
               article.previewLink;
 
+            
+
             // Populate the article content
             const contentContainer = document.querySelector(".article-content");
             contentContainer.innerHTML = ""; // Clear previous content
             article.content.forEach((item) => {
               if (item.type === "text") {
-                const paragraph = document.createElement("p");
-                paragraph.textContent = item.data;
-                contentContainer.appendChild(paragraph);
+                    if (item.data.startsWith("#")) {
+                        const header = document.createElement("h3");
+                        header.textContent = item.data.substring(1);
+                        header.style.fontWeight = "bold";
+                        header.style.fontSize = "1.2em";
+                        contentContainer.appendChild(header);
+                    } else {
+                        const paragraph = document.createElement("p");
+                        paragraph.textContent = item.data;
+                        contentContainer.appendChild(paragraph);
+                    }
               } else if (item.type === "image") {
                 const image = document.createElement("img");
                 image.src = item.src;
@@ -1254,6 +1276,21 @@
                   ul.appendChild(li);
                 });
                 contentContainer.appendChild(ul);
+              } else if (item.type === "code") {
+                const pre = document.createElement("pre");
+                const code = document.createElement("code");
+                code.textContent = item.data;
+                pre.appendChild(code);
+                pre.classList.add("hljs");
+                contentContainer.appendChild(pre);
+                hljs.highlightElement(pre);
+                pre.style.backgroundColor = "#eee";
+                pre.style.border = "1px solid #999";
+                pre.style.display = "block";
+                pre.style.padding = "20px";
+                
+                contentContainer.appendChild(pre);
+                
               }
             });
 

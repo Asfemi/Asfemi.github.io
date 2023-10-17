@@ -1,45 +1,61 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  #exampleModalLong .modal-dialog {
-    width: 50%;
-    max-width: 75%; /* Set the maximum width as needed */
-    margin: 0 auto;
-    
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#exampleModalLong .modal-dialog {
+  width: 50%;
+  max-width: 75%; /* Set the maximum width as needed */
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
 .article {
   width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  .article-title {
-    width: 850px;
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  .article-meta {
-    color: #888;
-    font-size: 14px;
-  }
-  .article-content {
-    line-height: 1.6;
-    font-size: 16px;
-  }
-  .article-image {
-    width: 100%;
-    max-width: 100%; /* Set maximum width to 800px */
-    height: 400px; /* Set height to 400px */
-    /* max-width: 100%;
-    height: auto; */
-    margin: 0 auto;
-    /* margin-bottom: 20px; */
-  }
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article-title {
+  width: 850px;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.article-meta {
+  color: #888;
+  font-size: 14px;
+}
+
+.article-content {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.article-image {
+  width: 100%;
+  max-width: 100%; /* Set maximum width to 800px */
+  height: 400px; /* Set height to 400px */
+  /* max-width: 100%;
+  height: auto; */
+  margin: 0 auto;
+  /* margin-bottom: 20px; */
+}
+
+.project-client {
+  font-size: 16px; /* Set the appropriate font size for the project-client class */
+}
+
+.project-city {
+  font-size: 16px; /* Set the appropriate font size for the project-client class */
+}
+
+.project-previewlink {
+  font-size: 16px; /* Set the appropriate font size for the project-client class */
+}

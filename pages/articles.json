@@ -1,5 +1,4 @@
 [
-
     {
         "title": "Why Bloc is the Preferred Choice for Flutter State Management",
         "date": "October 16, 2023",
@@ -12,91 +11,157 @@
                 "type": "image",
                 "src": "assets/img/blog/bloc.png",
                 "alt": "bloc illustration"
-              },
+            },
             {
                 "type": "text",
                 "data": "#introduction"
             },
-          {
-            "type": "text",
-            "data": "Every time we begin a new Flutter project, we face the question right away: “What state management method do I choose?” While there are a whole bunch of options out there, two prominent ones today are Bloc and Riverpod. I myself have been using Bloc since I first got into Flutter. Recently, I switched to Riverpod to test it out, and I think it’s safe to say: I’ll stick to Bloc. I’ll explain why."
-          },
-          
-          {
-            "type": "text",
-            "data": "#Efficient Event Transformation Handling"
-          },
-          {
-            "type": "text",
-            "data": "Bloc simplifies event transformation handling, allowing developers to implement features like throttleTime and debounceTime effortlessly. These functionalities, crucial for tasks such as live search or implementing time-sensitive user interactions, are seamlessly incorporated within the Bloc framework, minimizing the need for additional dependencies or complex configurations."
-          },
-          {
-            "type": "text",
-            "data": "#Flexibility in Managing Instances"
-          },
-          {
-            "type": "text",
-            "data": "With Bloc, developers enjoy the flexibility of managing instances efficiently. Whether it's declaring ViewModels as Factory or Singleton, Bloc's structure allows for adaptable implementation according to specific project requirements. This flexibility ensures that developers can maintain control over resource allocation and optimize application performance without compromising on architectural integrity."
-          },
-          {
-            "type": "image",
-            "src": "assets/img/blog/ca.jpg",
-            "alt": "clean architecture"
-          },
-          {
-            "type": "text",
-            "data": "#Seamless Integration with Clean Architecture"
-          },
-          {
-            "type": "text",
-            "data": "One of the key advantages of Bloc lies in its seamless integration with Clean Architecture. Unlike some alternatives, Bloc's design ensures that the dependency rule of Clean Architecture remains intact. The ability to maintain a strict separation between the Domain and Data modules without compromising the integrity of the architecture makes Bloc an ideal choice for structuring complex Flutter projects."
-          },
-          {
-            "type": "text",
-            "data": "#Streamlined and User-Friendly Framework"
-          },
-          {
-            "type": "text",
-            "data": "Bloc's straightforward and well-documented framework significantly simplifies the learning curve for developers. By focusing on a limited set of essential classes, Bloc reduces the complexity associated with other frameworks like Riverpod. The clear and concise documentation provided by the Bloc community further enhances the development experience, enabling developers to navigate the framework effortlessly and build robust applications with ease."
-          },
-          {
-            "type": "text",
-            "data": "#Enhanced Architecture Stability"
-          },
-          {
-            "type": "text",
-            "data": "Bloc's robust architecture safeguards against the risks associated with global scope variables, which can potentially disrupt the application's integrity. By emphasizing structured data flow and encapsulation, Bloc ensures that developers can create reliable and maintainable applications without compromising the overall architecture."
-          },
-          {
-            "type": "text", 
-            "data": "#Reliability with Mounted Variable Support"
-          },
-          {
-            "type": "text",
-            "data": "Bloc's support for the 'mounted' variable ensures enhanced reliability in managing provider object disposal. This crucial feature helps developers avoid potential exceptions and enhances the overall stability of the application, making it a preferred choice for large-scale and mission-critical projects."
-          },
-
-          {
-            "type": "code",
-            "data": "@override \n void add(E event) { \n if (!isClosed) { \n super.add(event); \n } else { \n Log.e('Cannot add new event $event because $runtimeType was closed'); \n }\n}"
-          },
-          {
-            "type": "text",
-            "data": "#Conclusion"
-          },
-          {
-            "type": "text",
-            "data": "Based on my recent experiences, the advantages offered by Bloc in terms of seamless integration, efficient event handling, and user-friendly architecture solidify its position as the preferred choice for Flutter state management. While acknowledging that Bloc, like any framework, has its limitations, its robust structure and comprehensive documentation make it the go-to option for delivering complex and reliable Flutter applications."
-          },
-          {
-            "type": "text",
-            "data": "I'm speaking from my own experience, so there may be some inaccuracies due to lack of experience. If something doesn’t stick out right to you, feel free to leave your thoughts! I appreciate every feedback from you!"
-          }
-          
+            {
+                "type": "text",
+                "data": "Every time we begin a new Flutter project, we face the question right away: “What state management method do I choose?” While there are a whole bunch of options out there, two prominent ones today are Bloc and Riverpod. I myself have been using Bloc since I first got into Flutter. Recently, I switched to Riverpod to test it out, and I think it’s safe to say: I’ll stick to Bloc. I’ll explain why."
+            },
+            {
+                "type": "text",
+                "data": "#Efficient Event Transformation Handling"
+            },
+            {
+                "type": "text",
+                "data": "Bloc simplifies event transformation handling, allowing developers to implement features like throttleTime and debounceTime effortlessly. These functionalities, crucial for tasks such as live search or implementing time-sensitive user interactions, are seamlessly incorporated within the Bloc framework, minimizing the need for additional dependencies or complex configurations."
+            },
+            {
+                "type": "text",
+                "data": "#Flexibility in Managing Instances"
+            },
+            {
+                "type": "text",
+                "data": "With Bloc, developers enjoy the flexibility of managing instances efficiently. Whether it's declaring ViewModels as Factory or Singleton, Bloc's structure allows for adaptable implementation according to specific project requirements. This flexibility ensures that developers can maintain control over resource allocation and optimize application performance without compromising on architectural integrity."
+            },
+            {
+                "type": "image",
+                "src": "assets/img/blog/ca.jpg",
+                "alt": "clean architecture"
+            },
+            {
+                "type": "text",
+                "data": "#Seamless Integration with Clean Architecture"
+            },
+            {
+                "type": "text",
+                "data": "One of the key advantages of Bloc lies in its seamless integration with Clean Architecture. Unlike some alternatives, Bloc's design ensures that the dependency rule of Clean Architecture remains intact. The ability to maintain a strict separation between the Domain and Data modules without compromising the integrity of the architecture makes Bloc an ideal choice for structuring complex Flutter projects."
+            },
+            {
+                "type": "text",
+                "data": "#Streamlined and User-Friendly Framework"
+            },
+            {
+                "type": "text",
+                "data": "Bloc's straightforward and well-documented framework significantly simplifies the learning curve for developers. By focusing on a limited set of essential classes, Bloc reduces the complexity associated with other frameworks like Riverpod. The clear and concise documentation provided by the Bloc community further enhances the development experience, enabling developers to navigate the framework effortlessly and build robust applications with ease."
+            },
+            {
+                "type": "text",
+                "data": "#Enhanced Architecture Stability"
+            },
+            {
+                "type": "text",
+                "data": "Bloc's robust architecture safeguards against the risks associated with global scope variables, which can potentially disrupt the application's integrity. By emphasizing structured data flow and encapsulation, Bloc ensures that developers can create reliable and maintainable applications without compromising the overall architecture."
+            },
+            {
+                "type": "text",
+                "data": "#Reliability with Mounted Variable Support"
+            },
+            {
+                "type": "text",
+                "data": "Bloc's support for the 'mounted' variable ensures enhanced reliability in managing provider object disposal. This crucial feature helps developers avoid potential exceptions and enhances the overall stability of the application, making it a preferred choice for large-scale and mission-critical projects."
+            },
+            {
+                "type": "code",
+                "data": "@override \n void add(E event) { \n if (!isClosed) { \n super.add(event); \n } else { \n Log.e('Cannot add new event $event because $runtimeType was closed'); \n }\n}"
+            },
+            {
+                "type": "text",
+                "data": "#Conclusion"
+            },
+            {
+                "type": "text",
+                "data": "Based on my recent experiences, the advantages offered by Bloc in terms of seamless integration, efficient event handling, and user-friendly architecture solidify its position as the preferred choice for Flutter state management. While acknowledging that Bloc, like any framework, has its limitations, its robust structure and comprehensive documentation make it the go-to option for delivering complex and reliable Flutter applications."
+            },
+            {
+                "type": "text",
+                "data": "I'm speaking from my own experience, so there may be some inaccuracies due to lack of experience. If something doesn’t stick out right to you, feel free to leave your thoughts! I appreciate every feedback from you!"
+            }
         ]
-      },
-      
-    
+    },
+    {
+        "title": "How to Shift Characters in a String in Flutter: A Step-by-Step Guide",
+        "date": "October 22, 2023",
+        "author": "Ayodele",
+        "previewLink": "",
+        "client": "",
+        "city": "",
+        "content": [
+            {
+                "type": "text",
+                "data": "#Introduction"
+            },
+            {
+                "type": "text",
+                "data": "In this article, we will learn how to shift characters in a string in Flutter. We will start by understanding the problem and then developing a plan to solve it. Once we have a plan, we will implement it in code and test it out. Finally, we will look back and improve our solution."
+            },
+            {
+                "type": "text",
+                "data": "Step 1: Understand the problem"
+            },
+            {
+                "type": "text",
+                "data": "The problem is asking us to write a function that shifts characters in a string to the right by a given number of positions. The function should take two arguments: the string to be shifted and the number of positions to shift it by. The function should return the shifted string."
+            },
+            {"type": "", "data": "For example, if we call the function with the arguments 'hacker' and 2, the function should return the string 'erhack'."},
+            {
+                "type": "text",
+                "data": "Step 2: Make a plan"
+            },
+            {
+                "type": "text",
+                "data": "One way to solve this problem is to iterate over the string and shift each character to the right by the given number of positions. We can use the modulus operator (%) to wrap around to the beginning of the string if the number of positions to shift is greater than the length of the string."
+            },
+            {
+                "type": "text",
+                "data": "Step 3"
+            },
+            {
+                "type": "text",
+                "data": "Carry out the plan\n\nHere is a Flutter implementation of the plan:"
+            },
+            {
+                "type": "code",
+                "data": "Dart\nString shiftCharacters(String string, int positions) {\n  // Initialize a variable to store the shifted string.\n  String shiftedString = \"\";\n\n  // Iterate over the string.\n  for (int i = 0; i < string.length; i++) {\n    // Shift the current character to the right by the given number of positions.\n    int shiftedIndex = (i + positions) % string.length;\n\n    // Append the shifted character to the shifted string.\n    shiftedString += string[shiftedIndex];\n  }\n\n  // Return the shifted string.\n  return shiftedString;\n}"
+            },
+            {
+                "type": "text",
+                "data": "Step 4"
+            },
+            {
+                "type": "text",
+                "data": "Look back and improve your solution\n\nWe can test our solution by calling the shiftCharacters() function with the arguments \"hacker\" and 2. The function should return the string \"erhack\"."
+            },
+            {
+                "type": "text",
+                "data": "We can also try calling the function with other arguments to make sure it works correctly. For example, we can call the function with the arguments \"hacker\" and 5. The function should return the string \"ckereha\"."
+            },
+            {
+                "type": "code",
+                "data": "Dart\nString shiftCharacters(String string, int positions) {\n  // Initialize a variable to store the shifted string.\n  String shiftedString = \"\";\n\n  // Keep track of the current position in the string.\n  int currentPosition = 0;\n\n  // Iterate over the string.\n  while (currentPosition < string.length) {\n    // Shift the current character to the right by the given number of positions.\n    int shiftedIndex = currentPosition + positions;\n\n    // Wrap around to the beginning of the string if we reach the end.\n    if (shiftedIndex >= string.length) {\n      shiftedIndex -= string.length;\n    }\n\n    // Append the shifted character to the shifted string.\n    shiftedString += string[shiftedIndex];\n\n    // Increment the current position.\n    currentPosition++;\n  }\n\n  // Return the shifted string.\n  return shiftedString;\n}"
+            },
+            {
+                "type": "text",
+                "data": "Conclusion"
+            },
+            {
+                "type": "text",
+                "data": "In this article, we learned how to shift characters in a string in Flutter. We started by understanding the problem and then developing a plan to solve it. Once we had a plan, we implemented it in code and tested it out. Finally, we looked back and improved our solution.\n\nBy following these steps, you can solve any problem in Flutter."
+            }
+        ]
+    },
     {
         "title": "Real Time Software",
         "date": "September 23, 2023",
@@ -136,728 +201,6 @@
                 "data": " p { color: red; } \nbody { background-color: #eee; }"
             }
         ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
-    },
-    {
-        "title": "Real Time Software",
-        "date": "September 23, 2023",
-        "author": "Albert Alexander",
-        "previewLink": "#",
-        "client": "Albert Alexander",
-        "city": "Los Angeles, LA",
-        "content": [
-            {
-                "type": "text",
-                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio nec mi dapibus blandit. Fusce tristique enim ut libero placerat, id tempus felis iaculis."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 2"
-            },
-            {
-                "type": "text",
-                "data": "Sed euismod elit eu ligula volutpat, ac fermentum purus eleifend. Vestibulum gravida tortor eu libero tempus, ut ullamcorper lectus venenatis. Cras at justo non odio placerat ultricies."
-            },
-            {
-                "type": "image",
-                "src": "https://via.placeholder.com/600x300",
-                "alt": "Sample Image 3"
-            },
-            {
-                "type": "text",
-                "data": "Integer tincidunt erat a bibendum condimentum. Nulla facilisi. Morbi sed tortor vel felis convallis elementum. Vivamus vehicula sapien euismod ligula gravida, a sagittis tellus laoreet."
-            },
-            {
-                "type": "text",
-                "data": "Quisque fermentum nunc eu justo tincidunt, sit amet feugiat ligula facilisis. Sed ultricies velit vitae metus vulputate, non malesuada urna congue."
-            }
-        ]
     }
 ]
-
-
-
+    

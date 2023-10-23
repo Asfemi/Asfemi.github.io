@@ -1,7 +1,7 @@
 [
     {
         "title": "Why Bloc is the Preferred Choice for Flutter State Management",
-        "date": "October 16, 2023",
+        "date": "Febuary 16, 2023",
         "author": "Ayodele",
         "previewLink": "",
         "client": "",
@@ -94,18 +94,24 @@
 
     {
         "title": "solving any problem: A Fun Guide",
-        "date": "October 22, 2023",
+        "date": "September 22, 2023",
         "author": "Ayodele",
         "previewLink": "",
         "client": "",
         "city": "",
         "content": [
-            {"type": "image", "src": "assets/img/blog/ps.png"},
+            {
+                "type": "image",
+                "src": "assets/img/blog/ps.png"
+            },
             {
                 "type": "text",
                 "data": "#Introduction"
             },
-            {"type": "text", "data": "You can apply these steps to ANY problem, from whiteboard interviews, to building projects, to refactoring legacy code. \n Credit to mathematician George Polya(https://en.wikipedia.org/wiki/How_to_Solve_It) for coming up with these steps."},
+            {
+                "type": "text",
+                "data": "You can apply these steps to ANY problem, from whiteboard interviews, to building projects, to refactoring legacy code. \n Credit to mathematician George Polya(https://en.wikipedia.org/wiki/How_to_Solve_It) for coming up with these steps."
+            },
             {
                 "type": "text",
                 "data": "In this article, we will learn an easy string manipulation in dart. We will start by understanding the problem and then developing a plan to solve it. Once we have a plan, we will implement it in code and test it out. Finally, we will look back and improve our solution."
@@ -180,16 +186,22 @@
                 "type": "text",
                 "data": "Once we are confident that our solution works correctly, we can look for ways to improve it. One way to improve the solution is to make it more efficient. For example, we can avoid using the modulus operator by keeping track of the current position in the string and wrapping around to the beginning of the string if we reach the end."
             },
-
-            {"type": "image", "src": "assets/img/blog/think.png"},
-
-            {"type": "text", "data": "Here is an improved version of the shiftCharacters() function:"},
-           
+            {
+                "type": "image",
+                "src": "assets/img/blog/think.png"
+            },
+            {
+                "type": "text",
+                "data": "Here is an improved version of the shiftCharacters() function:"
+            },
             {
                 "type": "code",
                 "data": "Dart\nString shiftCharacters(String string, int positions) {\n  // Initialize a variable to store the shifted string.\n  String shiftedString = \"\";\n\n  // Keep track of the current position in the string.\n  int currentPosition = 0;\n\n  // Iterate over the string.\n  while (currentPosition < string.length) {\n    // Shift the current character to the right by the given number of positions.\n    int shiftedIndex = currentPosition + positions;\n\n    // Wrap around to the beginning of the string if we reach the end.\n    if (shiftedIndex >= string.length) {\n      shiftedIndex -= string.length;\n    }\n\n    // Append the shifted character to the shifted string.\n    shiftedString += string[shiftedIndex];\n\n    // Increment the current position.\n    currentPosition++;\n  }\n\n  // Return the shifted string.\n  return shiftedString;\n}"
             },
-            {"type": "text", "data": "This improved version of the function is more efficient than the original version because it avoids using the modulus operator."},
+            {
+                "type": "text",
+                "data": "This improved version of the function is more efficient than the original version because it avoids using the modulus operator."
+            },
             {
                 "type": "text",
                 "data": "#Conclusion"
@@ -198,10 +210,13 @@
                 "type": "text",
                 "data": "In this article, we learned how to shift characters in a string in Flutter. We started by understanding the problem and then developing a plan to solve it. Once we had a plan, we implemented it in code and tested it out. Finally, we looked back and improved our solution."
             },
-            {"type": "text", "data": "By following these steps, you can solve any problem in Flutter."}
-
+            {
+                "type": "text",
+                "data": "By following these steps, you can solve any problem in Flutter."
+            }
         ]
     },
+
     {
         "title": "Real Time Software",
         "date": "September 23, 2023",
